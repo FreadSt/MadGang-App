@@ -1,0 +1,40 @@
+.user-data{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    border: 2px solid;
+    border-radius: 10px;
+    img{
+        width: 50%;
+        height: 50%;
+        align-self: center;
+        padding-top: 10px;
+    }
+    .des-text-container{
+        h2{
+            margin: 0;
+            font-weight: 900;
+        }
+        p{
+            margin: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-self: center;
+        .description{
+            p{
+                text-align:center;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+        a{
+            font-family: 'Poppins' sans-serif;
+            font-size: 38px;
+            font-weight: 600;
+        }
+    }
+}
+

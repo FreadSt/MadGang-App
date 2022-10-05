@@ -1,4 +1,5 @@
 .user-data{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 4%;
@@ -38,3 +39,27 @@
     }
 }
 
+.secondpage-images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    img{
+        width: 20em;
+        height: 20em;
+    }
+    h2{
+        text-decoration: none;
+    }
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
+
+.data-container{
+    display: flex;
+    justify-content: center;
+}

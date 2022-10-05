@@ -1,0 +1,24 @@
+.data-container{
+    width: 100%;
+    height: 100vh;
+    .list-btn{
+        margin: 20px;
+        button{
+            width: 90px;
+            height: 40px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .list-box{
+        width: 50%;
+        align-self: center;
+
+        img{
+            width: 300px;
+            height: 250px;
+        }
+    }
+}
+

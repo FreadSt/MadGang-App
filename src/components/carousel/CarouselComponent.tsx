@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./style.scss"
 
-export const Cards = () => {
+export const CarouselComponent = () => {
     const [objectData, setObjectData] = useState<IData[]>([])
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex: any) => {

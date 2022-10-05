@@ -1,6 +1,4 @@
-import "./style.scss"
 import { Link } from "react-router-dom";
-import "./style.scss"
 
 export const ThirdComponent = (props: {data : any}) => {
     const {data} = props

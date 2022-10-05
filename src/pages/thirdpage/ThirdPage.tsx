@@ -1,7 +1,6 @@
 import Axios from "axios"
 import React, {useState, useEffect} from "react"
 import { IData } from "../../components/interfaces"
-import  {SecondComponent}  from "../../components/SecondComponent"
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router";
 import "./style.scss"
@@ -12,6 +11,9 @@ export const ThirdPage: React.FC = () => {
     const navigate = useNavigate()
     const handleNavBack = () => {
         navigate('/secondpage', {replace:true})
+    }
+    const handleNav = () => {
+        navigate('/', {replace:true})
     }
     let { id } = useParams();
   console.log(id, "param ID")
@@ -25,7 +27,8 @@ export const ThirdPage: React.FC = () => {
     return(
         <div className="data-container">
             <div className="list-btn">
-                <button onClick={handleNavBack}><span>To Main Page</span></button>
+                <button onClick={handleNavBack}><span>Return</span></button>
+                <button onClick={handleNav}><span>To Main Page</span></button>
             </div>
             
             <div className="list-box">

@@ -1,3 +1,54 @@
 .data-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+        .secondpage-btn{
+            margin: 40px;
+            button{
+                width: 120px;
+                height: 40px;
+                border: none;
+                border-radius: 6px;
+                background-color: rgb(205, 233, 255);
+                box-shadow: -5px 5px 20px 2px grey;
+                span{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            button:hover{
+                background-color: rgb(70, 171, 248);
+                transform: scale(1.1);
+                transition: .35s;
+                span{
+                    color: #fff2f2;
+                }
+            }
+        }
+        .component-box{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .cards-container{
+                display: flex;
+                justify-content: center;
+                a{
+                    text-decoration: none;
+                    .secondpage-images{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        margin: 20px;
+                        img{
+                            width: 20em;
+                            height: 20em;
+                        }
+                    }
+                }
+                a:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
 }

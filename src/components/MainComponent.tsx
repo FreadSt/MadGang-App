@@ -1,5 +1,3 @@
-import "./style.scss"
-
 export const MainComponent = (props: {data : any}) => {
     const {data} = props
     return(

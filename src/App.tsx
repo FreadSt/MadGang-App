@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import { MainPage } from './pages/mainpage/MainPage';
 import { SecondPage } from './pages/secondpage/SecondPage';

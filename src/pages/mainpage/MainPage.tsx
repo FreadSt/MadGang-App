@@ -26,9 +26,9 @@ export const MainPage: React.FC = () => {
     },[])
     return(
         <div>
-            <h1>MadApp</h1>
+            <h1 className="title">MadAppGang</h1>
             <CarouselComponent/>
-            <button className="mainpage-btn" onClick={handleNav}>To Dragons</button>
+            <button className="mainpage-btn" onClick={handleNav}><span>View all Dragons</span></button>
             <div className="data-container">
                 {objectData.length ?
                     objectData.map(data =>

@@ -1,16 +1,50 @@
+.carousel-main{
+    display: flex;
+    justify-content: center;
+    .image-container{
+        width: 500px;
+        div{
+            .carousel-indicators{
+
+            }
+            .carousel-inner{
+                width: 100%;
+                .carousel-item{
+                    .image-slide{
+                        width: 500px;
+                        height: 400px;
+                    }
+                }
+            }
+            .carousel-control-next{
+                span{
+                    background-color: black;
+                }
+            }
+            .carousel-control-prev{
+                span{
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+/*
 .image-slide{
-    width: 700px;
-    height: 600px;
-    
+    width: 500px;
+    height: 400px;
 }
 .carousel-inner{
+    width: 100%;
 }
 
 .carousel-main{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
-
+*/
 
 
 

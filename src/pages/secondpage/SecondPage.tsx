@@ -19,15 +19,15 @@ export const SecondPage: React.FC = () => {
         Axios.get(`https://api.spacexdata.com/v4/dragons`)
         .then(res=> {
             console.log(res.data, "res") 
-            setObjectData([objectData, ...res.data])
+            setObjectData([...res.data])
         })
     },[])
     return(
-        <div>
-            <div className="">
-                <button onClick={handleNavBack}>Go Back</button>
+        <div className="data-container">
+            <div className="secondpage-btn">
+                <button onClick={handleNavBack}><span>Return</span></button>
             </div>
-            <div className="data-container">
+            <div className="component-box">
                 {objectData.length ?
                     objectData.map(data =>
                     <SecondComponent key={data.name} data={data}/>

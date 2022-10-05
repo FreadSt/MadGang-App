@@ -1,13 +1,83 @@
-.mainpage-btn{
-    margin: 40px;
-    width: 90px;
-    height: 40px;
-    font-size: 14px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    background-color: red;
-    :hover{
-        color: aqua;
+div{
+    .title{
+        margin: 0;
+        padding: 20px;
+        text-shadow: 2px 2px 2px rgb(167, 167, 167);
+        font-size: 50px;
+        font-weight: 700;
+        color: #636262;
+    }
+    .mainpage-btn{
+        margin: 40px;
+        width: 120px;
+        height: 60px;
+        border: none;
+        border-radius: 6px;
+        background-color: rgb(205, 233, 255);
+        box-shadow: -5px 5px 20px 2px grey;
+        span{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .mainpage-btn:hover{
+        background-color: rgb(70, 171, 248);
+        transform: scale3d(10%);
+        transition: .35s;
+        span{
+            color: #fff2f2;
+        }
+    }
+    .data-container{
+        display: flex;
+        justify-content: center;
+        .user-data{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 4%;
+            border: 2px solid;
+            border-radius: 10px;
+            align-self: center;
+
+            img{
+                width: 50%;
+                margin: 50px;
+                height: 50%;
+                align-self: center;
+                padding-top: 10px;
+            }
+            .des-text-container{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                align-self: center;
+                h2{
+                    margin: 0;
+                    font-weight: 900;
+                }
+                p{
+                    margin: 0;
+                }
+                img{
+                    margin: 10px;
+                }
+                .description{
+                    p{
+                        text-align:center;
+                        font-size: 18px;
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+                a{
+                    font-family: 'Poppins' sans-serif;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+        }
+        
     }
 }

@@ -45,3 +45,53 @@
         }
     }
 }
+
+@media(max-width: 550px){
+    .data-container{
+        .list-btn{
+            margin: 50px;
+            button{
+                margin: 20px 30px 0px 30px;
+                width: 120px;
+                height: 60px;
+                border: none;
+                border-radius: 6px;
+                background-color: rgb(205, 233, 255);
+                box-shadow: -5px 5px 20px 2px grey;
+                span{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            button:hover{
+                background-color: rgb(70, 171, 248);
+                transform: scale3d(10%);
+                transition: .35s;
+                span{
+                    color: #fff2f2;
+                }
+            }
+        }
+        .list-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            align-self: center;
+            margin: 30px;
+            position: relative;
+            img{
+                width: 250px;
+                height: 200px;
+                align-self: center;
+            }
+            h2{
+                padding: 10px;
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -17,7 +17,8 @@ export const CarouselComponent = () => {
         })
     },[])
     return(
-        <div className="carousel-main">
+        <div className="carousel-block">
+             <div className="carousel-main">
             {objectData.map((postData) => {
 				console.log(postData);
 				return (
@@ -36,6 +37,7 @@ export const CarouselComponent = () => {
                     </div>
 				);
 			})}
+        </div>
         </div>                    
     )
 }

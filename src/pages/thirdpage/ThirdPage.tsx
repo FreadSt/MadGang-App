@@ -28,7 +28,6 @@ export const ThirdPage: React.FC = () => {
         <div className="data-container">
             <div className="list-btn">
                 <button onClick={handleNavBack}><span>Return</span></button>
-                <button onClick={handleNav}><span>To Main Page</span></button>
             </div>
             
             <div className="list-box">
@@ -40,6 +39,10 @@ export const ThirdPage: React.FC = () => {
               <a href={objectData?.wikipedia}>Link to Wiki</a>
               <p>Date: {objectData?.first_flight}</p>
               <p>Weight: {objectData?.dry_mass_kg}</p>
+            </div>
+
+            <div className="list-btn">
+                <button onClick={handleNav}><span>To Main Page</span></button>
             </div>
         </div>
     )
